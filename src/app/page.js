@@ -1,4 +1,4 @@
-import AllFetures from "@/component/Banner/AllFetures/AllFetures";
+import AllFetures from "@/component/AllFetures/AllFetures";
 import Image from "next/image";
 
 export default function Home() {

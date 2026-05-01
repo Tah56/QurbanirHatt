@@ -9,7 +9,7 @@
     "age": 4,
     "location": "Sirajganj",
     "description": "Strong and large-sized cow, perfect for Qurbani.",
-    "image": "https://i.postimg.cc/example-cow2.jpg",
+    "img": "https://images.pexels.com/photos/17227543/pexels-photo-17227543.jpeg",
     "category": "Large Animal"
   },
   {
@@ -22,7 +22,7 @@
     "age": 2,
     "location": "Rajshahi",
     "description": "Raised with natural feed, healthy and well-maintained.",
-    "image": "https://i.postimg.cc/example-cow3.jpg",
+    "img": "https://images.pexels.com/example-cow3.jpg",
     "category": "Medium Animal"
   },
   {
@@ -35,7 +35,7 @@
     "age": 5,
     "location": "Pabna",
     "description": "Large-sized premium quality cow suitable for Qurbani.",
-    "image": "https://i.postimg.cc/example-cow4.jpg",
+    "img": "https://images.pexels.com/example-cow4.jpg",
     "category": "Large Animal"
   },
   {
@@ -48,7 +48,7 @@
     "age": 2,
     "location": "Naogaon",
     "description": "Ideal choice for small families.",
-    "image": "https://i.postimg.cc/example-cow5.jpg",
+    "img": "https://images.pexels.com/example-cow5.jpg",
     "category": "Small Animal"
   },
   {
@@ -61,7 +61,7 @@
     "age": 3,
     "location": "Chattogram",
     "description": "Popular Red Chittagong breed known for good meat quality.",
-    "image": "https://i.postimg.cc/example-cow6.jpg",
+    "img": "https://images.pexels.com/example-cow6.jpg",
     "category": "Large Animal"
   },
   {
@@ -74,7 +74,7 @@
     "age": 1.5,
     "location": "Kushtia",
     "description": "Healthy and active Black Bengal goat.",
-    "image": "https://i.postimg.cc/example-goat1.jpg",
+    "img": "https://images.pexels.com/example-goat1.jpg",
     "category": "Small Animal"
   },
   {
@@ -87,7 +87,7 @@
     "age": 2,
     "location": "Dhaka",
     "description": "Large-sized goat, ready for Qurbani.",
-    "image": "https://i.postimg.cc/example-goat2.jpg",
+    "img": "https://images.pexels.com/example-goat2.jpg",
     "category": "Medium Animal"
   },
   {
@@ -100,7 +100,7 @@
     "age": 1.5,
     "location": "Mymensingh",
     "description": "Clean and healthy local sheep.",
-    "image": "https://i.postimg.cc/example-sheep1.jpg",
+    "img": "https://images.pexels.com/example-sheep1.jpg",
     "category": "Small Animal"
   },
   {
@@ -113,7 +113,7 @@
     "age": 5,
     "location": "Khulna",
     "description": "Huge-sized bull with high demand for Qurbani.",
-    "image": "https://i.postimg.cc/example-cow7.jpg",
+    "img": "https://images.pexels.com/example-cow7.jpg",
     "category": "Large Animal"
   },
   {
@@ -126,7 +126,7 @@
     "age": 3,
     "location": "Jessore",
     "description": "Attractive and healthy cow.",
-    "image": "https://i.postimg.cc/example-cow8.jpg",
+    "img": "https://images.pexels.com/example-cow8.jpg",
     "category": "Medium Animal"
   },
   {
@@ -139,7 +139,7 @@
     "age": 1,
     "location": "Rangpur",
     "description": "Affordable option within a low budget.",
-    "image": "https://i.postimg.cc/example-goat3.jpg",
+    "imge": "https://images.pexels.com/example-goat3.jpg",
     "category": "Small Animal"
   },
   {
@@ -152,7 +152,7 @@
     "age": 4,
     "location": "Gazipur",
     "description": "Premium farm-raised foreign breed cow.",
-    "image": "https://i.postimg.cc/example-cow9.jpg",
+    "img": "https://images.pexels.com/example-cow9.jpg",
     "category": "Large Animal"
   }
 ]
