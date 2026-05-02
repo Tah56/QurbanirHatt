@@ -7,7 +7,7 @@ const Cards = ({ cow }) => {
     <Card className="cursor-pointer w-96">
       <div className="relative w-full  aspect-square">
         <Image
-          src={cow.img}
+          src={cow?.img}
           fill
           alt={cow?.name}
           className="object-cover rounded-2xl"
