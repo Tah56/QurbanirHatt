@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../card/Card';
 import Cards from '../card/Card';
+import Link from 'next/link';
 
 const showTopCow = async()=>{
     const res = await fetch("http://localhost:3000//data.json");
@@ -19,10 +20,10 @@ const AllFetures = async() => {
     
     return (
         <div>
-            <h2>Top Feture</h2>
+            <h2 className='text-4xl font-bold text-center my-10'>Top Feature</h2>
             <div className='grid grid-cols-4 gap-5 place-items-center'>
                 {
-                    cows.map(cow=><Cards key={cow.id} cow={cow}></Cards>)
+                    cows.map(cow=><Link key={cow.id} href={`/animals/${cow.id}`}><Cards  cow={cow}></Cards></Link>)
                 }
             </div>
 

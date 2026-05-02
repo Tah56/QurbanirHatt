@@ -22,7 +22,7 @@
     "age": 2,
     "location": "Rajshahi",
     "description": "Raised with natural feed, healthy and well-maintained.",
-    "img": "https://images.pexels.com/photos/17227543/pexels-photo-17227543.jpeg",
+    "img": "https://cdn.pixabay.com/photo/2022/12/01/20/17/cow-7629733_1280.jpg",
     "category": "Medium Animal"
   },
   {
@@ -35,7 +35,7 @@
     "age": 5,
     "location": "Pabna",
     "description": "Large-sized premium quality cow suitable for Qurbani.",
-    "img": "https://images.pexels.com/photos/17227543/pexels-photo-17227543.jpeg",
+    "img": "https://cdn.pixabay.com/photo/2017/08/04/09/39/indian-cow-2579534_1280.jpg",
     "category": "Large Animal"
   },
   {
@@ -48,7 +48,7 @@
     "age": 2,
     "location": "Naogaon",
     "description": "Ideal choice for small families.",
-    "img": "https://images.pexels.com/photos/17227543/pexels-photo-17227543.jpeg",
+    "img": "https://cdn.pixabay.com/photo/2025/06/10/10/39/cow-9651900_1280.jpg",
     "category": "Small Animal"
   },
   {
@@ -61,7 +61,7 @@
     "age": 3,
     "location": "Chattogram",
     "description": "Popular Red Chittagong breed known for good meat quality.",
-    "img": "https://images.pexels.com/photos/17227543/pexels-photo-17227543.jpeg",
+    "img": "https://cdn.pixabay.com/photo/2017/10/03/06/55/gaumata-2811457_1280.jpg",
     "category": "Large Animal"
   },
   {
@@ -74,7 +74,7 @@
     "age": 1.5,
     "location": "Kushtia",
     "description": "Healthy and active Black Bengal goat.",
-    "img": "https://images.pexels.com/example-goat1.jpg",
+    "img": "https://cdn.pixabay.com/photo/2018/09/05/13/37/goat-3656281_1280.jpg",
     "category": "Small Animal"
   },
   {
@@ -87,7 +87,7 @@
     "age": 2,
     "location": "Dhaka",
     "description": "Large-sized goat, ready for Qurbani.",
-    "img": "https://images.pexels.com/example-goat2.jpg",
+    "img": "https://cdn.pixabay.com/photo/2019/10/09/12/32/goat-4537294_1280.jpg",
     "category": "Medium Animal"
   },
   {
@@ -100,7 +100,7 @@
     "age": 1.5,
     "location": "Mymensingh",
     "description": "Clean and healthy local sheep.",
-    "img": "https://images.pexels.com/example-sheep1.jpg",
+    "img": "https://cdn.pixabay.com/photo/2023/01/17/07/43/sheep-7723970_1280.jpg",
     "category": "Small Animal"
   },
   {
@@ -139,7 +139,7 @@
     "age": 1,
     "location": "Rangpur",
     "description": "Affordable option within a low budget.",
-    "imge": "https://images.pexels.com/example-goat3.jpg",
+    "img": "https://images.pexels.com/photos/12985557/pexels-photo-12985557.jpeg",
     "category": "Small Animal"
   },
   {
