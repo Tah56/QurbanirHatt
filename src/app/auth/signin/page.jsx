@@ -20,7 +20,7 @@ const SignInPage = () => {
         redirect("/")
        
     }
-    console.log({data,error});
+    
     
   };
     return (

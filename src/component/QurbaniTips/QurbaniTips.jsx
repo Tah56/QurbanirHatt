@@ -4,8 +4,6 @@ import React from "react";
 
 const QurbaniTips = async () => {
   const tips = await tip();
-  console.log(tips);
-
   return (
     <div className="py-20 text-center space-y-10  shadow-2xl my-20 rounded-2xl container mx-auto place-items-center ">
 

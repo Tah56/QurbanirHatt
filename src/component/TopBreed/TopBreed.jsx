@@ -4,7 +4,7 @@ const showTopCow = async()=>{
     const res = await fetch("https://qurbanir-hatt.vercel.app/data.json");
     const cows = await res.json()
     const top = cows.slice(0,4)
-    console.log(top);
+    
     return top
     
 }
@@ -12,7 +12,7 @@ const showTopCow = async()=>{
 
 const TopBreed = async() => {
     const cows = await showTopCow()
-    console.log(cows);
+    
     
     
     return (

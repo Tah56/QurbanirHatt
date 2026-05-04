@@ -10,7 +10,7 @@ const Navbar = () => {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
   const user = authClient.useSession()
   const users = user.data?.user
-  console.log(users);
+  
  
 
 

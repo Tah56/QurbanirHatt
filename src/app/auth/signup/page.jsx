@@ -24,7 +24,7 @@ const signUpPage = () => {
       email: Userdata.email,
       password: Userdata.password,
     });
-    console.log({data,error});
+   
     if(!error){
       toast.success("sign up success")
       router.push("/")
