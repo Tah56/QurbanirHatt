@@ -21,7 +21,7 @@ const AllFetures = async() => {
     return (
         <div>
             <h2 className='text-4xl font-bold text-center my-10'>Top Feature</h2>
-            <div className='grid grid-cols-4 gap-5 place-items-center'>
+            <div className='grid md:grid-cols-3 grid-cols-4 gap-5 place-items-center'>
                 {
                     cows.map(cow=><Link key={cow.id} href={`/animals/${cow.id}`}><Cards  cow={cow}></Cards></Link>)
                 }

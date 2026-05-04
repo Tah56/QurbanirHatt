@@ -19,11 +19,11 @@ const AllAnimals = () => {
 
   const sorted = [...sort].sort((a, b) => a.price - b.price);
   return (
-    <div className="grid grid-cols-4 container mx-auto gap-20 py-10">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 container mx-auto md:gap-10 place-items-center py-10">
       {sorted.map((data) => {
         return (
-          <Link key={data.id} href={`animals/${data.id}`}>
-          <Card  className="cursor-pointer w-96">
+         
+          <Card key={data.id}  className="cursor-pointer w-96">
             <div className="relative w-full  aspect-square">
               <Image
                 src={data.img}
@@ -49,7 +49,7 @@ const AllAnimals = () => {
               <Button>Full details</Button>
             </Link>
           </Card>
-      </Link>
+      
         );
       })}
     </div>
