@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "title": "Choose a Healthy Animal",
+    "description": "Select an active animal with clear eyes, good appetite, and no visible illness."
+  },
+  {
+    "id": 2,
+    "title": "Verify Proper Age",
+    "description": "Ensure the animal meets the minimum age requirement for valid Qurbani."
+  },
+  {
+    "id": 3,
+    "title": "Check Physical Condition",
+    "description": "Avoid animals that are blind, injured, or missing essential body parts."
+  },
+  {
+    "id": 4,
+    "title": "Compare Price and Weight",
+    "description": "Make sure the price is fair according to the animal’s size and health."
+  },
+  {
+    "id": 5,
+    "title": "Buy from Trusted Sellers",
+    "description": "Choose verified or reputable sellers to avoid fraud and unhealthy animals."
+  },
+  {
+    "id": 6,
+    "title": "Avoid Last-Minute Buying",
+    "description": "Early purchase gives better selection, fair prices, and less stress."
+  },
+  {
+    "id": 7,
+    "title": "Ensure Proper Feeding",
+    "description": "Keep the animal well-fed and hydrated before Qurbani day."
+  },
+  {
+    "id": 8,
+    "title": "Maintain Humane Treatment",
+    "description": "Keep the animal calm and avoid any unnecessary stress or harsh handling."
+  },
+  {
+    "id": 9,
+    "title": "Follow Proper Slaughter Method",
+    "description": "Ensure the process is clean, quick, and follows Islamic guidelines."
+  },
+  {
+    "id": 10,
+    "title": "Plan Meat Distribution",
+    "description": "Divide meat properly among family, relatives, and those in need."
+  }
+]

@@ -51,7 +51,7 @@ const Footer = () => {
                   href="/generate"
                   className="hover:text-black dark:hover:text-white transition"
                 >
-                  Generate
+                 
                 </Link>
               </li>
               <li>
@@ -59,7 +59,7 @@ const Footer = () => {
                   href="/all-photos"
                   className="hover:text-black dark:hover:text-white transition"
                 >
-                  Gallery
+                 
                 </Link>
               </li>
               <li>
@@ -67,7 +67,7 @@ const Footer = () => {
                   href="/pricing"
                   className="hover:text-black dark:hover:text-white transition"
                 >
-                  Pricing
+                  
                 </Link>
               </li>
             </ul>

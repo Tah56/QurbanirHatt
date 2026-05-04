@@ -1,12 +1,20 @@
+'use client'
 import { Button } from "@heroui/react";
 import Link from "next/link";
+import 'animate.css';
+import { use } from "react";
 
 const Banner = () => {
+  const scrollToSection = (id) => {
+  document.getElementById(id)?.scrollIntoView({
+    behavior: "smooth"
+  });
+};
   return (
     <div className="bg-[url('https://images.pexels.com/photos/17791314/pexels-photo-17791314.jpeg')] h-screen w-full bg-cover bg-no-repeat bg-center flex items-center rounded-lg shadow-2xl">
       {/* Overlay */}
       <div className="w-full h-full rounded-lg bg-black/50 flex items-center ">
-        <div className="max-w-7xl mx-auto px-6 text-white">
+        <div className="max-w-7xl mx-auto px-6 text-white animate__animated animate__fadeInDown">
           <h1 className="text-4xl md:text-6xl font-bold mb-4 max-w-2xl">
             Make Your Qurbani Meaningful This Eid{" "}
           </h1>
@@ -14,18 +22,20 @@ const Banner = () => {
             Choose from a wide range of healthy and well-cared animals.{" "}
           </p>
 
-          <div className="flex gap-4">
+          <div className="flex flex-col md:flex-row gap-4">
             <Link href="/animals">
               <Button className="bg-linear-to-r from-pink-500 via-purple-500 bg-red-500">
                 🟢 Browse Animals 
               </Button>
             </Link>
 
-            <Link href="/pricing">
-              <Button variant="outline" className="text-white">
+            
+              <Button onClick={()=>{
+                scrollToSection("qurbani-tips")
+              }} variant="outline" className="text-white">
                 ⚪ Learn Qurbani Tips
               </Button>
-            </Link>
+            
           </div>
         </div>
       </div>
