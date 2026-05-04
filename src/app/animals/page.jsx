@@ -19,7 +19,7 @@ const AllAnimals = () => {
 
   const sorted = [...sort].sort((a, b) => a.price - b.price);
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-3 container mx-auto md:gap-10 place-items-center py-10">
+    <div className="grid md:grid-cols-2 lg:grid-cols-3 container mx-auto gap-20 place-items-center py-10">
       {sorted.map((data) => {
         return (
          
