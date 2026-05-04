@@ -1,3 +1,4 @@
+import { BuyForm } from "@/component/BuyForm/BuyForm";
 import { Button, Card } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -39,7 +40,9 @@ const TopFeture = async ({ params }) => {
           <p>Animals description : <span className="font-medium text-xl">{signle?.description}</span></p>
         </div>
       <Button><Link href={"/animals"}>go back</Link></Button>
+      <BuyForm></BuyForm>
       </Card>
+     
     </div>
   );
 };
