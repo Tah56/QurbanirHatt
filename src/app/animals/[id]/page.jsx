@@ -34,7 +34,7 @@ const TopFeture = async ({ params }) => {
           <p>Animal Type: <span className="font-medium text-xl">{signle?.type}</span></p>
           <p>Animal Breed: <span className="font-medium text-xl">{signle?.breed}</span></p>
           <p>Price: <span className="font-medium text-xl">{signle?.price}</span></p>
-          <p>Weight: <span className="font-medium text-xl">{signle?.weight}</span></p>
+          <p>Weight: <span className="font-medium text-xl">{signle?.weight}Kg</span></p>
           <p>Animal Age: <span className="font-medium text-xl">{signle?.age}</span></p>
           <p>Animals description : <span className="font-medium text-xl">{signle?.description}</span></p>
         </div>
