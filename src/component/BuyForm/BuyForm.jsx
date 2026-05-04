@@ -15,7 +15,7 @@ export function BuyForm() {
               <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
                 <Envelope className="size-5" />
               </Modal.Icon>
-              <Modal.Heading>User Info</Modal.Heading>
+              <Modal.Heading>Buyer Info</Modal.Heading>
               <p className="mt-1.5 text-sm leading-5 text-muted">
                
               </p>
