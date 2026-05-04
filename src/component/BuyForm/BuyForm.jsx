@@ -6,7 +6,7 @@ import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
 export function BuyForm() {
   return (
     <Modal>
-      <Button variant="secondary">Open Contact Form</Button>
+      <Button variant="secondary">Buy now</Button>
       <Modal.Backdrop>
         <Modal.Container placement="auto">
           <Modal.Dialog className="sm:max-w-md">
@@ -15,10 +15,9 @@ export function BuyForm() {
               <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
                 <Envelope className="size-5" />
               </Modal.Icon>
-              <Modal.Heading>Contact Us</Modal.Heading>
+              <Modal.Heading>User Info</Modal.Heading>
               <p className="mt-1.5 text-sm leading-5 text-muted">
-                Fill out the form below and we'll get back to you. The modal adapts automatically
-                when the keyboard appears on mobile.
+               
               </p>
             </Modal.Header>
             <Modal.Body className="p-6">
@@ -35,15 +34,7 @@ export function BuyForm() {
                   <TextField className="w-full" name="phone" type="tel">
                     <Label>Phone</Label>
                     <Input placeholder="Enter your phone number" />
-                  </TextField>
-                  <TextField className="w-full" name="company">
-                    <Label>Company</Label>
-                    <Input placeholder="Enter your company name" />
-                  </TextField>
-                  <TextField className="w-full" name="message">
-                    <Label>Message</Label>
-                    <Input placeholder="Enter your message" />
-                  </TextField>
+                  </TextField> 
                 </form>
               </Surface>
             </Modal.Body>
@@ -51,7 +42,7 @@ export function BuyForm() {
               <Button slot="close" variant="secondary">
                 Cancel
               </Button>
-              <Button slot="close">Send Message</Button>
+              <Button slot="close">Buy now</Button>
             </Modal.Footer>
           </Modal.Dialog>
         </Modal.Container>
