@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 const showTopCow = async () => {
-  const res = await fetch("http://localhost:3000//data.json");
+  const res = await fetch("https://qurbanir-hatt.vercel.app/data.json");
   const cows = await res.json();
   
   return cows;
