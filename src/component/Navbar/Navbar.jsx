@@ -101,9 +101,9 @@ toast.success("log out successful")
           <li>
             <Link href={"/profile"}>Profile</Link>
           </li>
-           <li >
+          { !user && <li >
               <Link href={"/auth/signup"}><Button>Sign Up</Button></Link>
-            </li>
+            </li>}
           </ul>
         </div>
       )}
