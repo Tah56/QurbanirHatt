@@ -8,7 +8,7 @@ export function BuyForm() {
     <Modal>
       <Button variant="secondary">Buy now</Button>
       <Modal.Backdrop>
-        <Modal.Container placement="center">
+        <Modal.Container placement="top">
           <Modal.Dialog className="sm:max-w-md">
             <Modal.CloseTrigger />
             <Modal.Header>
