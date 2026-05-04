@@ -69,6 +69,9 @@ toast.success("log out successful")
           <li>
             <Link href={"/profile"}>Profile</Link>
           </li>
+          <li >
+              <Link href={"/auth/signup"}><Button>Sign Up</Button></Link>
+            </li>
         </ul>
 
         <div className="flex gap-5">
