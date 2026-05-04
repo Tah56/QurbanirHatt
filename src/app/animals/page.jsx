@@ -9,7 +9,7 @@ const AllAnimals = () => {
 
   useEffect(() => {
     const showTopCow = async () => {
-      const res = await fetch("http://localhost:3000//data.json");
+      const res = await fetch("http://localhost:3000/data.json");
       const cows = await res.json();
 
       setSort(cows);
