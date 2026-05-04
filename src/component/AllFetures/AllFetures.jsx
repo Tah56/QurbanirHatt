@@ -4,7 +4,7 @@ import Cards from '../card/Card';
 import Link from 'next/link';
 
 const showTopCow = async()=>{
-    const res = await fetch("http://localhost:3000//data.json");
+    const res = await fetch("https://qurbanir-hatt.vercel.app/data.json");
     const cows = await res.json()
     const top = cows.slice(0,4)
     console.log(top);
