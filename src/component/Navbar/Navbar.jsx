@@ -6,9 +6,9 @@ import Link from "next/link";
 import { redirect, useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import NavLink from "../Navlink/NavLink";
 
 const Navbar = () => {
-  const router =useRouter()
    const [isMenuOpen, setIsMenuOpen] = useState(false);
   const user = authClient.useSession()
   const users = user.data?.user
@@ -62,14 +62,14 @@ toast.success("log out successful")
 
         <ul className="hidden md:flex items-center gap-5 text-sm">
           <li>
-            <Link href={"/"}>Home</Link>
+            <NavLink href={"/"}>Home</NavLink>
           </li>
           <li>
-            <Link href={"/animals"}>All Animals</Link>
+            <NavLink href={"/animals"}>All Animals</NavLink>
           </li>
          
           <li>
-            <Link href={"/profile"}>Profile</Link>
+            <NavLink href={"/profile"}>Profile</NavLink>
           </li>
          
         </ul>
@@ -77,10 +77,10 @@ toast.success("log out successful")
         <div className="flex gap-5">
           {!users && <ul className="flex items-center gap-2.5 text-[10px]  text-sm">
             <li className="hidden md:flex">
-              <Link href={"/auth/signup"}><Button>Sign Up</Button></Link>
+              <Link href={"/auth/register"}><Button>Sign Up</Button></Link>
             </li>
             <li>
-              <Link href={"/auth/signin"}><Button variant="outline">Sign In</Button></Link>
+              <Link href={"/auth/login"}><Button variant="outline">Sign In</Button></Link>
             </li>
           </ul>}
           {
@@ -104,7 +104,7 @@ toast.success("log out successful")
             <Link href={"/profile"}>Profile</Link>
           </li>
           { !user && <li >
-              <Link href={"/auth/signup"}><Button>Sign Up</Button></Link>
+              <Link href={"/auth/register"}><Button>Sign Up</Button></Link>
             </li>}
           </ul>
         </div>
