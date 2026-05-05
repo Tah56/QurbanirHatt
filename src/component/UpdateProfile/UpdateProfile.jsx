@@ -54,7 +54,7 @@ export function UpdateProfile() {
               <Button slot="close" variant="secondary">
                 Cancel
               </Button>
-              <Button onClick={()=>{
+              <Button type="submit" onClick={()=>{
                   toast.success("profile update success")
               }} slot="close">Save</Button>
                 </form>
