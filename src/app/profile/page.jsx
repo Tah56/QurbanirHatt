@@ -11,7 +11,7 @@ const Profile = () => {
     <div className=" mt-5">
       <Card className="cursor-pointer w-70 md:w-96 flex flex-col justify-between items-center mx-auto h-[40vh] ">
         <div className=" flex flex-col items-center justify-between space-y-10">
-          <Avatar>
+          <Avatar className="w-20 h-20 rounded-full">
             <Avatar.Image
               alt={user?.name}
               src={user?.image}
