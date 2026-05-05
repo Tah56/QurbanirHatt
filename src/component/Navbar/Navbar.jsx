@@ -108,7 +108,7 @@ const Navbar = () => {
         </div>
       </nav>
       {isMenuOpen && (
-        <div className="absolute bg-white border-t border-separator md:hidden">
+        <div className="absolute bg-white border-t border-separator md:hidden z-10">
           <ul className="flex flex-col gap-2 p-4">
             <li>
               <Link href={"/"}>Home</Link>

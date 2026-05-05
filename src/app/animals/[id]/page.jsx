@@ -39,8 +39,11 @@ const TopFeture = async ({ params }) => {
           <p>Animal Age: <span className="font-medium text-xl">{signle?.age}</span></p>
           <p>Animals description : <span className="font-medium text-xl">{signle?.description}</span></p>
         </div>
-      <Button><Link href={"/animals"}>go back</Link></Button>
+        <div className="flex p-2.5 gap-5 justify-end">
+
+      <Button><Link href={"/animals"}>Go back</Link></Button>
       <BuyForm></BuyForm>
+        </div>
       </Card>
      
     </div>

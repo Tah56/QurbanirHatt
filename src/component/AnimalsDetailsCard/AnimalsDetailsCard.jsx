@@ -24,6 +24,7 @@ const AnimalsDetailsCard = ({data}) => {
               <h2>Breed:{data.breed}</h2>
               <h2>Price: {data?.price}Taka</h2>
             </div>
+            
             <Link
               className={"ml-auto"}
               key={data.id}

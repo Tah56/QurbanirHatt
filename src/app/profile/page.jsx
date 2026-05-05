@@ -19,7 +19,7 @@ const Profile = () => {
             />
             <Avatar.Fallback>{user?.name[0]}</Avatar.Fallback>
           </Avatar>
-          <div>
+          <div className="text-center">
 
           <h2>{user?.name}</h2>
           <p>{user?.email}</p>
