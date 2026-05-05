@@ -1,10 +1,31 @@
 "use client";
 
 
+import { authClient } from "@/app/lib/auth-client";
 import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
+import { redirect } from "next/navigation";
 import { toast } from "react-toastify";
 
-export function BuyForm() {
+export function UpdateProfile() {
+
+     const onSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const Userdata = Object.fromEntries(formData.entries());
+    await authClient.updateUser({
+    image: Userdata.image,
+    name: Userdata.name
+})
+    if(data){
+        toast.success("profile update success")
+      
+       
+    }else{
+      toast.error("Profile update failed")
+    }
+    
+    
+  };
   return (
     <Modal>
       <Button variant="secondary">Buy now</Button>
@@ -28,14 +49,11 @@ export function BuyForm() {
                     <Label>Name</Label>
                     <Input placeholder="Enter your name" />
                   </TextField>
-                  <TextField className="w-full" name="email" type="email">
+                  <TextField className="w-full" name="image" type="text">
                     <Label>Email</Label>
-                    <Input placeholder="Enter your email" />
+                    <Input placeholder="Enter your image URL" />
                   </TextField>
-                  <TextField className="w-full" name="phone" type="tel">
-                    <Label>Phone</Label>
-                    <Input placeholder="Enter your phone number" />
-                  </TextField> 
+                 
                 </form>
               </Surface>
             </Modal.Body>
