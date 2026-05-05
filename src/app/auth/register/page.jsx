@@ -105,7 +105,7 @@ const signUpPage = () => {
           <Button type="submit">
             <Check />
             Submit
-          </Button>
+          </Button  >
           <Button type="reset" variant="secondary">
             Reset
           </Button>

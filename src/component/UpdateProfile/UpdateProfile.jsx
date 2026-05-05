@@ -4,13 +4,14 @@
 import { authClient } from "@/app/lib/auth-client";
 import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
 import { redirect } from "next/navigation";
+import { RxAvatar } from "react-icons/rx";
 import { toast } from "react-toastify";
 
 export function UpdateProfile() {
 
      const onSubmit = async (e) => {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
+    const formData = new FormData(e.currentTarget); 
     const Userdata = Object.fromEntries(formData.entries());
     await authClient.updateUser({
     image: Userdata.image,
