@@ -3,10 +3,16 @@ import { authClient } from '@/app/lib/auth-client';
 import { Check } from '@gravity-ui/icons';
 import { Button, Description, FieldError, Form, Input, Label, TextField } from '@heroui/react';
 import { redirect } from 'next/navigation';
+import { GrGoogle } from 'react-icons/gr';
 import { toast } from 'react-toastify';
 
 
 const SignInPage = () => {
+  const handleGoogleSignIn=async()=>{
+     const data = await authClient.signIn.social({
+    provider: "google",
+  });
+  }
       const onSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -79,6 +85,11 @@ const SignInPage = () => {
                     Reset
                   </Button>
                 </div>
+              <p className='text-center'>OR</p>
+              <div className='flex items-center justify-center '>
+
+              <Button onClick={handleGoogleSignIn} className="w-full"><GrGoogle/>Sign with Google</Button>
+              </div>
               </Form>
             </div>
     )
