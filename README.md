@@ -17,7 +17,7 @@ A modern web platform to browse, buy, and sell Qurbani animals بسهولة and 
 
 ⚙️ Installation
 # Clone the repo
-git clone https://github.com/your-username/qurbani-marketplace.git](https://github.com/Tah56/QurbanirHatt.git
+git clone (https://github.com/Tah56/QurbanirHatt.git](https://github.com/Tah56/QurbanirHatt.git)
 
 # Go to project folder
 cd qurbani-marketplace
@@ -103,7 +103,7 @@ This project is open-source and available under the MIT License.
 ---
 
 ## 🙌 Final Note
-Live link: https://vercel.com/tah56s-projects/qurbanir-hatt
+Live link: (https://qurbanir-hatt.vercel.app/)
 
 This project is built with the intention of combining **technology + tradition** to make Qurbani easier, smarter, and more meaningful.
 
