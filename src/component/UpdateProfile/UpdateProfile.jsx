@@ -13,17 +13,13 @@ export function UpdateProfile() {
     e.preventDefault();
     const formData = new FormData(e.currentTarget); 
     const Userdata = Object.fromEntries(formData.entries());
+    console.log(Userdata);
+    
     await authClient.updateUser({
     image: Userdata.image,
     name: Userdata.name
 })
-    if(data){
-        toast.success("profile update success")
-      
-       
-    }else{
-      toast.error("Profile update failed")
-    }
+ 
     
     
   };
@@ -63,8 +59,8 @@ export function UpdateProfile() {
                 Cancel
               </Button>
               <Button onClick={()=>{
-                toast.success("order confirm")
-              }} slot="close">Buy now</Button>
+                  toast.success("profile update success")
+              }} slot="close">Save</Button>
             </Modal.Footer>
           </Modal.Dialog>
         </Modal.Container>
