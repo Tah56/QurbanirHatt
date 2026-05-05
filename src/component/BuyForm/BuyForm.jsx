@@ -14,7 +14,7 @@ export function BuyForm() {
             <Modal.CloseTrigger />
             <Modal.Header>
               <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
-                <Envelope className="size-5" />
+                <RxAvatar className="size-5" />
               </Modal.Icon>
               <Modal.Heading>Buyer Info</Modal.Heading>
               <p className="mt-1.5 text-sm leading-5 text-muted">
