@@ -12,6 +12,10 @@ export function UpdateProfile() {
      const onSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget); 
+    if(!formData){
+        toast.error("something wrong try again")
+        return
+    }
     const Userdata = Object.fromEntries(formData.entries());
     console.log(Userdata);
     
