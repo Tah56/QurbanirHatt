@@ -19,7 +19,7 @@ const AllFetures = async () => {
   return (
     <div>
       <h2 className="text-4xl font-bold text-center my-10">Featured Animals</h2>
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-5 place-items-center">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 place-items-center">
         {cows.map((cow) => (
           <Cards key={cow.id} cow={cow}></Cards>
         ))}

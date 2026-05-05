@@ -18,7 +18,7 @@ const TopBreed = async() => {
     return (
         <div id="top-breed" className="py-10">
             <h2 className='text-4xl font-bold text-center my-10'>Top Breed</h2>
-            <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-5 place-items-center'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-4 gap-5 place-items-center'>
                 {
                     cows.map(cow=><Cards key={cow.id}  cow={cow}></Cards>)
                 }
