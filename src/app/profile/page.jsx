@@ -25,7 +25,7 @@ const Profile = () => {
           <p>{user?.email}</p>
           </div>
         </div >
-            <div className=" flex flex-col items-end justify-end">
+            <div className=" flex flex-col items-end justify-center">
                 <UpdateProfile></UpdateProfile>
             </div>
       </Card>
