@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { authClient } from "@/app/lib/auth-client";
 import { Button } from "@heroui/react";
 import Image from "next/image";
@@ -9,25 +9,23 @@ import { toast } from "react-toastify";
 import NavLink from "../Navlink/NavLink";
 
 const Navbar = () => {
-   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const user = authClient.useSession()
-  const users = user.data?.user
-  
- 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const users = authClient.useSession();
+  const user = users.data?.user;
 
+  console.log(user);
 
-  const handleSignOut =async()=>{
+  const handleSignOut = async () => {
     await authClient.signOut();
-toast.success("log out successful")
-    
-  }
-  if(!user){
+    toast.success("log out successful");
+  };
+  if (!user) {
   }
   return (
     <div className="border-b px-2 relative top-0">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
         <div className="flex gap-2 items-center">
-           <button
+          <button
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
@@ -56,7 +54,7 @@ toast.success("log out successful")
               )}
             </svg>
           </button>
-          
+
           <h3 className="font-black md:text-lg">QurabanirHatt</h3>
         </div>
 
@@ -67,45 +65,67 @@ toast.success("log out successful")
           <li>
             <NavLink href={"/animals"}>All Animals</NavLink>
           </li>
-         
+
           <li>
             <NavLink href={"/profile"}>Profile</NavLink>
           </li>
-         
         </ul>
 
         <div className="flex gap-5">
-          {!users && <ul className="flex items-center gap-2.5 text-[10px]  text-sm">
-            <li className="hidden md:flex">
-              <Link href={"/auth/register"}><Button>Sign Up</Button></Link>
-            </li>
-            <li>
-              <Link href={"/auth/login"}><Button variant="outline">Sign In</Button></Link>
-            </li>
-          </ul>}
-          {
-          users && <Button onClick={()=>{
-            handleSignOut()
-          }}>Log Out</Button>
-          
-          }
+          {!users && (
+            <ul className="flex items-center gap-2.5 text-[10px]  text-sm">
+              <li className="hidden md:flex">
+                <Link href={"/auth/register"}>
+                  <Button>Sign Up</Button>
+                </Link>
+              </li>
+              <li>
+                <Link href={"/auth/login"}>
+                  <Button variant="outline">Sign In</Button>
+                </Link>
+              </li>
+            </ul>
+          )}
+          {users && (
+            <Button
+              onClick={() => {
+                handleSignOut();
+              }}
+            >
+              Log Out
+            </Button>
+          )}
         </div>
       </nav>
-       {isMenuOpen && (
+      {isMenuOpen && (
         <div className="absolute bg-white border-t border-separator md:hidden">
           <ul className="flex flex-col gap-2 p-4">
-             <li>
-            <Link href={"/"}>Home</Link>
-          </li>
-          <li>
-            <Link href={"/animals"}>All Animals</Link>
-          </li>
-          <li>
-            <Link href={"/profile"}>Profile</Link>
-          </li>
-          { !user && <li >
-              <Link href={"/auth/register"}><Button>Sign Up</Button></Link>
-            </li>}
+            <li>
+              <Link href={"/"}>Home</Link>
+            </li>
+            <li>
+              <Link href={"/animals"}>All Animals</Link>
+            </li>
+            <li>
+              <Link href={"/profile"}>Profile</Link>
+            </li>
+            {!user && (
+              <div>
+                <Avatar>
+                  <Avatar.Image
+                    alt="John Doe"
+                    src={user?.image}
+                  />
+                  <Avatar.Fallback>JD</Avatar.Fallback>
+                </Avatar>
+
+                <li>
+                  <Link href={"/auth/register"}>
+                    <Button>Sign Up</Button>
+                  </Link>
+                </li>
+              </div>
+            )}
           </ul>
         </div>
       )}

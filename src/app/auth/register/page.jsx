@@ -23,6 +23,7 @@ const signUpPage = () => {
       name: Userdata.name,
       email: Userdata.email,
       password: Userdata.password,
+      image:Userdata.img
     });
    
     if(!error){
@@ -37,6 +38,15 @@ const signUpPage = () => {
       <Form
         className="flex w-96 flex-col gap-4 shadow-2xl p-10 rounded-2xl"
         onSubmit={onSubmit}>
+       <TextField
+            isRequired
+            name="img"
+            
+          >
+            <Label>Image Link</Label>
+            <Input placeholder="Enter your image link" />
+            <FieldError />
+          </TextField>
        <TextField
             isRequired
             name="name"
