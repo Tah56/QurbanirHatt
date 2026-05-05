@@ -23,7 +23,7 @@ const signUpPage = () => {
       name: Userdata.name,
       email: Userdata.email,
       password: Userdata.password,
-      image:Userdata.img
+      image:Userdata.image
     });
    
     if(!error){

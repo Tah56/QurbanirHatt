@@ -50,13 +50,15 @@ export function UpdateProfile() {
                     <Label>Email</Label>
                     <Input placeholder="Enter your image URL" />
                   </TextField>
-                 
+                 <div className="flex items-end justify-center">
+
               <Button slot="close" variant="secondary">
                 Cancel
               </Button>
               <Button type="submit" onClick={()=>{
                   toast.success("profile update success")
-              }} slot="close">Save</Button>
+                }} slot="close">Save</Button>
+                </div>
                 </form>
               </Surface>
             </Modal.Body>
