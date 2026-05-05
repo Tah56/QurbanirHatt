@@ -86,7 +86,7 @@ const Navbar = () => {
             </ul>
           )}
           {user && (
-            <div>
+            <div className="flex items-center gap-2.5">
               <Avatar>
                 <Avatar.Image
                   alt={user?.name}
