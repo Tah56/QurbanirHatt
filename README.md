@@ -1,4 +1,4 @@
-# 🐄 Qurbani Marketplace
+# 🐄 Qurbani-hatt
 
 A modern web platform to browse, buy, and sell Qurbani animals بسهولة and with confidence. Built with a focus on clean UI, trust, and smooth user experience.
 
