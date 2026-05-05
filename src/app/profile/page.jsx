@@ -8,8 +8,8 @@ const Profile = () => {
   const users = authClient.useSession();
   const user = users.data?.user;
   return (
-    <div className=" flex items-center justify-center mt-5">
-      <Card className="cursor-pointer w-70 md:w-96  mx-auto h-[40vh] ">
+    <div className=" mt-5">
+      <Card className="cursor-pointer w-70 md:w-96 flex flex-col justify-between items-center mx-auto h-[40vh] ">
         <div className=" flex flex-col items-center justify-between space-y-10">
           <Avatar>
             <Avatar.Image
@@ -25,7 +25,7 @@ const Profile = () => {
           <p>{user?.email}</p>
           </div>
         </div >
-            <div className=" flex flex-col items-end justify-center">
+            <div className=" flex flex-col items-center justify-center">
                 <UpdateProfile></UpdateProfile>
             </div>
       </Card>
