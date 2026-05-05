@@ -1,6 +1,6 @@
 "use client";
 import { authClient } from "@/app/lib/auth-client";
-import { Button } from "@heroui/react";
+import { Avatar, Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
 import { redirect, useRouter } from "next/navigation";
@@ -13,14 +13,13 @@ const Navbar = () => {
   const users = authClient.useSession();
   const user = users.data?.user;
 
-  console.log(user);
+  console.log(users);
 
   const handleSignOut = async () => {
     await authClient.signOut();
     toast.success("log out successful");
   };
-  if (!user) {
-  }
+  
   return (
     <div className="border-b px-2 relative top-0">
       <nav className=" flex justify-between items-center  py-3 max-w-7xl mx-auto w-full">
@@ -72,7 +71,7 @@ const Navbar = () => {
         </ul>
 
         <div className="flex gap-5">
-          {!users && (
+          {!user && (
             <ul className="flex items-center gap-2.5 text-[10px]  text-sm">
               <li className="hidden md:flex">
                 <Link href={"/auth/register"}>
@@ -86,14 +85,25 @@ const Navbar = () => {
               </li>
             </ul>
           )}
-          {users && (
-            <Button
-              onClick={() => {
-                handleSignOut();
-              }}
-            >
-              Log Out
-            </Button>
+          {user && (
+            <div>
+              <Avatar>
+                <Avatar.Image
+                  alt={user?.name}
+                  src={user?.image}
+                  referrerPolicy="no-referrer"
+                />
+                <Avatar.Fallback>{user?.name[0]}</Avatar.Fallback>
+              </Avatar>
+
+              <Button
+                onClick={() => {
+                  handleSignOut();
+                }}
+              >
+                Log Out
+              </Button>
+            </div>
           )}
         </div>
       </nav>
@@ -110,21 +120,11 @@ const Navbar = () => {
               <Link href={"/profile"}>Profile</Link>
             </li>
             {!user && (
-              <div>
-                <Avatar>
-                  <Avatar.Image
-                    alt="John Doe"
-                    src={user?.image}
-                  />
-                  <Avatar.Fallback>JD</Avatar.Fallback>
-                </Avatar>
-
-                <li>
-                  <Link href={"/auth/register"}>
-                    <Button>Sign Up</Button>
-                  </Link>
-                </li>
-              </div>
+              <li>
+                <Link href={"/auth/register"}>
+                  <Button>Sign Up</Button>
+                </Link>
+              </li>
             )}
           </ul>
         </div>
