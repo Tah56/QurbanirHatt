@@ -29,7 +29,7 @@ export function UpdateProfile() {
   };
   return (
     <Modal>
-      <Button variant="secondary">Buy now</Button>
+      <Button variant="secondary">Update Info</Button>
       <Modal.Backdrop>
         <Modal.Container placement="top">
           <Modal.Dialog className="sm:max-w-md">
@@ -38,7 +38,7 @@ export function UpdateProfile() {
               <Modal.Icon className="bg-accent-soft text-accent-soft-foreground">
                 <RxAvatar className="size-5" />
               </Modal.Icon>
-              <Modal.Heading>Buyer Info</Modal.Heading>
+              <Modal.Heading>Update Info</Modal.Heading>
               <p className="mt-1.5 text-sm leading-5 text-muted">
                
               </p>
