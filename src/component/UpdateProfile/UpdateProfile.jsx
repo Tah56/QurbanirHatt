@@ -40,16 +40,11 @@ export function UpdateProfile() {
                   className="flex flex-col justify-between gap-4"
                 >
                   <TextField
-                  isRequired
+                  
                     className="w-full"
                     name="name"
                     type="text "
-                     validate={(value) => {
-                      if (value.length <0) {
-                        return "Name must be at least 3 characters";
-                      }
-                      return null;
-                    }}
+                     
                    
                   >
                     <Label>Name</Label>
