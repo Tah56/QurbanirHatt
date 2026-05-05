@@ -3,10 +3,12 @@ import { authClient } from "@/app/lib/auth-client";
 import { Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { redirect, useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "react-toastify";
 
 const Navbar = () => {
+  const router =useRouter()
    const [isMenuOpen, setIsMenuOpen] = useState(false);
   const user = authClient.useSession()
   const users = user.data?.user
@@ -15,9 +17,9 @@ const Navbar = () => {
 
 
   const handleSignOut =async()=>{
+    await authClient.signOut();
 toast.success("log out successful")
-  await authClient.signOut();
-
+    
   }
   if(!user){
   }

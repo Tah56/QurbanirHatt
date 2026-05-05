@@ -28,6 +28,8 @@ const signUpPage = () => {
     if(!error){
       toast.success("sign up success")
       router.push("/")
+    }else{
+      toast.error('sign up fail please try again')
     }
   };
   return (

@@ -2,6 +2,7 @@
 
 import {Envelope} from "@gravity-ui/icons";
 import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
+import { toast } from "react-toastify";
 
 export function BuyForm() {
   return (
@@ -42,7 +43,9 @@ export function BuyForm() {
               <Button slot="close" variant="secondary">
                 Cancel
               </Button>
-              <Button slot="close">Buy now</Button>
+              <Button onClick={()=>{
+                toast.success("order confirm")
+              }} slot="close">Buy now</Button>
             </Modal.Footer>
           </Modal.Dialog>
         </Modal.Container>

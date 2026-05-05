@@ -19,6 +19,8 @@ const SignInPage = () => {
         toast.success("login success")
         redirect("/")
        
+    }else{
+      toast.error("login failed")
     }
     
     
