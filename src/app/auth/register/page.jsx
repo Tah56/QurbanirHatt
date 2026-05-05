@@ -101,7 +101,7 @@ const signUpPage = () => {
           </Description>
           <FieldError />
         </TextField>
-        <div className="flex gap-2">
+        <div className="flex  gap-2">
           <Button type="submit">
             <Check />
             Submit

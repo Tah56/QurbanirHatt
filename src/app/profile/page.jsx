@@ -19,10 +19,13 @@ const Profile = () => {
             />
             <Avatar.Fallback>{user?.name[0]}</Avatar.Fallback>
           </Avatar>
+          <div>
+
           <h2>{user?.name}</h2>
           <p>{user?.email}</p>
-        </div>
-            <div>
+          </div>
+        </div >
+            <div className=" flex items-end justify-end">
                 <UpdateProfile></UpdateProfile>
             </div>
       </Card>
