@@ -51,16 +51,16 @@ export function UpdateProfile() {
                     <Input placeholder="Enter your image URL" />
                   </TextField>
                  
-                </form>
-              </Surface>
-            </Modal.Body>
-            <Modal.Footer>
               <Button slot="close" variant="secondary">
                 Cancel
               </Button>
               <Button onClick={()=>{
                   toast.success("profile update success")
               }} slot="close">Save</Button>
+                </form>
+              </Surface>
+            </Modal.Body>
+            <Modal.Footer>
             </Modal.Footer>
           </Modal.Dialog>
         </Modal.Container>
