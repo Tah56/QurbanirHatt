@@ -41,7 +41,7 @@ export function UpdateProfile() {
             </Modal.Header>
             <Modal.Body className="p-6">
               <Surface variant="default">
-                <form onSubmit={onSubmit} className="flex flex-col gap-4">
+                <form onSubmit={onSubmit} className="flex flex-col justify-between gap-4">
                   <TextField className="w-full" name="name" type="text">
                     <Label>Name</Label>
                     <Input placeholder="Enter your name" />
@@ -50,7 +50,7 @@ export function UpdateProfile() {
                     <Label>Email</Label>
                     <Input placeholder="Enter your image URL" />
                   </TextField>
-                 <div className="flex items-end justify-center">
+                 <div className="flex items-end justify-end gap-4 pt-10">
 
               <Button slot="close" variant="secondary">
                 Cancel

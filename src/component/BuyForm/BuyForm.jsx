@@ -2,6 +2,7 @@
 
 
 import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
+import { RxAvatar } from "react-icons/rx";
 import { toast } from "react-toastify";
 
 export function BuyForm() {
